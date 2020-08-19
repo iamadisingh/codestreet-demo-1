@@ -44,9 +44,14 @@ class MainAppScreen extends StatelessWidget {
                     title: "Public Library",
                     colours: Color(0xff0099ff),
                   ),
-                  HomeScreenButton(
-                    title: "Online Library",
-                    colours: Color(0xff0099ff),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/onlineLibraryScreen');
+                    },
+                    child: HomeScreenButton(
+                      title: "Online Library",
+                      colours: Color(0xff0099ff),
+                    ),
                   ),
                   HomeScreenButton(
                     title: "Book Selling Vendors",

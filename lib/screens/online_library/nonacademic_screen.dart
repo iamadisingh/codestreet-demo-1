@@ -104,7 +104,9 @@ class NonAcademicScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/bookSearchScreen');
+        },
         child: FaIcon(FontAwesomeIcons.search),
       ),
       appBar: AppBar(

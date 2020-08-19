@@ -15,7 +15,7 @@ class ExchangeScreen extends StatelessWidget {
               height: 100,
             ),
             Text(
-              "Book Exchange Forum",
+              "Book Exchange",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -38,26 +38,47 @@ class ExchangeScreen extends StatelessWidget {
               height: 20,
             ),
             HomeScreenButton(
-              title: "Wish List",
+              title: "Your Wishlist",
               colours: Color(0xff0099ff),
             ),
             HomeScreenButton(
-              title: "You Book Basket",
+              title: "Your Basket",
               colours: Color(0xff0099ff),
             ),
             SizedBox(
               height: 70,
             ),
-            Chip(
-              avatar: CircleAvatar(
-                backgroundColor: Color(0xffebebeb),
-                child: FaIcon(
-                  FontAwesomeIcons.questionCircle,
-                  color: Colors.black,
-                  size: 15,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Chip(
+                  avatar: CircleAvatar(
+                    backgroundColor: Color(0xffebebeb),
+                    child: FaIcon(
+                      FontAwesomeIcons.questionCircle,
+                      color: Colors.black,
+                      size: 15,
+                    ),
+                  ),
+                  label: Text('Facing issues? Contact us.'),
                 ),
-              ),
-              label: Text('Facing issues? Contact us.'),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/mainAppScreen');
+                  },
+                  child: Chip(
+                    avatar: CircleAvatar(
+                      backgroundColor: Color(0xffebebeb),
+                      child: FaIcon(
+                        FontAwesomeIcons.arrowCircleLeft,
+                        color: Colors.black,
+                        size: 15,
+                      ),
+                    ),
+                    label: Text("Go Back"),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

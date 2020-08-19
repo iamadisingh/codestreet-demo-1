@@ -1,3 +1,4 @@
+import 'package:express_app_self/screens/book_search/book_scearch_screen.dart';
 import 'package:express_app_self/screens/exchange_screen/exchange_screen.dart';
 import 'package:express_app_self/screens/home_screen.dart';
 import 'package:express_app_self/screens/main_app_screen.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         // ignore: equal_keys_in_map
         '/publicLibraryScreen': (context) => ExplorePopularPlaces(),
         '/exchangeBookPage': (context) => ExchangeScreen(),
+        '/bookSearchScreen': (context) => BookSearchScreen(),
       },
     );
   }

@@ -1,3 +1,4 @@
+import 'package:express_app_self/screens/exchange_screen/exchange_screen.dart';
 import 'package:express_app_self/screens/home_screen.dart';
 import 'package:express_app_self/screens/main_app_screen.dart';
 import 'package:express_app_self/screens/online_library/nonacademic_screen.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/nonAcademicScreen': (context) => NonAcademicScreen(),
         // ignore: equal_keys_in_map
         '/publicLibraryScreen': (context) => ExplorePopularPlaces(),
+        '/exchangeBookPage': (context) => ExchangeScreen(),
       },
     );
   }

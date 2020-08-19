@@ -82,7 +82,7 @@ class MainAppScreen extends StatelessWidget {
                           });
                     },
                     child: HomeScreenButton(
-                      title: "Public Library",
+                      title: "Search Libraries",
                       colours: Color(0xff0099ff),
                     ),
                   ),
@@ -99,9 +99,14 @@ class MainAppScreen extends StatelessWidget {
                     title: "Book Selling Vendors",
                     colours: Color(0xff0099ff),
                   ),
-                  HomeScreenButton(
-                    title: "Exchange your books",
-                    colours: Color(0xff0099ff),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/exchangeBookPage');
+                    },
+                    child: HomeScreenButton(
+                      title: "Exchange your books",
+                      colours: Color(0xff0099ff),
+                    ),
                   ),
                 ],
               ),

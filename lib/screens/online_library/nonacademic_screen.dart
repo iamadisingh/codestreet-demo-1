@@ -1,4 +1,6 @@
 import 'package:express_app_self/modals/harry_potter.dart';
+import 'package:express_app_self/widgets/home_screen_button.dart';
+import 'package:express_app_self/widgets/input_text_feild.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -217,7 +219,75 @@ class NonAcademicScreen extends StatelessWidget {
                         ),
                         FlatButton(
                           child: const Text('READ'),
-                          onPressed: () {/* ... */},
+                          onPressed: () {
+                            showModalBottomSheet(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return Container(
+                                  color: Colors.white,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(15.0),
+                                    child: ListView(
+                                      scrollDirection: Axis.vertical,
+                                      children: [
+                                        Text(
+                                          "To continue reading",
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 35,
+                                            letterSpacing: 1.1,
+                                            color: Colors.black,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          height: 30,
+                                        ),
+                                        Text(
+                                          "Please enter the verification code provided by the concerned Library your account is associated to.",
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 15,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                        ),
+                                        SizedBox(
+                                          height: 30,
+                                        ),
+                                        InputTextFeild(
+                                          reqText: "Verification Code / ID",
+                                        ),
+                                        SizedBox(
+                                          height: 10,
+                                        ),
+                                        HomeScreenButton(
+                                          title: "Verify and continue",
+                                          colours: Colors.black,
+                                        ),
+                                        SizedBox(
+                                          height: 30,
+                                        ),
+                                        Chip(
+                                          avatar: CircleAvatar(
+                                            backgroundColor: Color(0xffebebeb),
+                                            child: FaIcon(
+                                              FontAwesomeIcons
+                                                  .solidQuestionCircle,
+                                              color: Colors.black,
+                                              size: 15,
+                                            ),
+                                          ),
+                                          label:
+                                              Text("Facing issue? Contact us."),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              },
+                            );
+                          },
                         ),
                         FlatButton(
                           child: const Text('ADD TO YOUR SHELF'),

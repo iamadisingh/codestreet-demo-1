@@ -76,6 +76,10 @@ class HomeScreen extends StatelessWidget {
                   width: 20,
                 ),
                 FaIcon(FontAwesomeIcons.facebook),
+                SizedBox(
+                  width: 20,
+                ),
+                FaIcon(FontAwesomeIcons.youtube),
               ],
             ),
           ],

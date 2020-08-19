@@ -1,6 +1,7 @@
 import 'package:express_app_self/widgets/home_screen_button.dart';
 import 'package:express_app_self/widgets/input_text_feild.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -102,6 +103,22 @@ class SignUpPage extends StatelessWidget {
                   child: HomeScreenButton(
                     title: "Register",
                     colours: Color(0xff0099ff),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/');
+                  },
+                  child: Chip(
+                    avatar: CircleAvatar(
+                      backgroundColor: Color(0xffebebeb),
+                      child: FaIcon(
+                        FontAwesomeIcons.arrowCircleLeft,
+                        color: Colors.black,
+                        size: 15,
+                      ),
+                    ),
+                    label: Text("Go Back"),
                   ),
                 ),
               ],

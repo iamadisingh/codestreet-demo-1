@@ -40,9 +40,51 @@ class MainAppScreen extends StatelessWidget {
                   SizedBox(
                     height: 50,
                   ),
-                  HomeScreenButton(
-                    title: "Public Library",
-                    colours: Color(0xff0099ff),
+                  GestureDetector(
+                    onTap: () {
+                      showModalBottomSheet(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return Container(
+                              child: Padding(
+                                padding: const EdgeInsets.all(25.0),
+                                child: Column(
+                                  children: [
+                                    SizedBox(
+                                      height: 100,
+                                    ),
+                                    Text(
+                                      "We here, show you all the public Libraries available in your area, you can choose whichever library you would want to go",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    SizedBox(
+                                      height: 50,
+                                    ),
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.pushNamed(
+                                            context, '/publicLibraryScreen');
+                                      },
+                                      child: HomeScreenButton(
+                                        title: "Continue",
+                                        colours: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            );
+                          });
+                    },
+                    child: HomeScreenButton(
+                      title: "Public Library",
+                      colours: Color(0xff0099ff),
+                    ),
                   ),
                   GestureDetector(
                     onTap: () {

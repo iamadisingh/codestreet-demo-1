@@ -15,4 +15,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-![image](https://github.com/iamadisingh/codestreet-demo-2/blob/master/screenshots/welcome_screen.png)  ![image](https://github.com/iamadisingh/codestreet-demo-2/blob/master/screenshots/welcome_screen.png)  
+![alt text](screenshots/welcome_screen.png "Main home screen")

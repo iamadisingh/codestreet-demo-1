@@ -1,5 +1,6 @@
 import 'package:express_app_self/widgets/home_screen_button.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -10,6 +11,9 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 100,
+            ),
             Text(
               "Project Book-Worm",
               style: TextStyle(
@@ -49,6 +53,30 @@ class HomeScreen extends StatelessWidget {
                 title: "Sign Up",
                 colours: Color(0xff0099ff),
               ),
+            ),
+            SizedBox(
+              height: 70,
+            ),
+            Text(
+              "Connnect With us:",
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FaIcon(FontAwesomeIcons.instagram),
+                SizedBox(
+                  width: 20,
+                ),
+                FaIcon(FontAwesomeIcons.twitter),
+                SizedBox(
+                  width: 20,
+                ),
+                FaIcon(FontAwesomeIcons.facebook),
+              ],
             ),
           ],
         ),

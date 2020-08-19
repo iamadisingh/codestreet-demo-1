@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Smart City App",
+              "Project Book-Worm",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 38,
@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               height: 10,
             ),
             Text(
-              "🌁",
+              "📚",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 38,

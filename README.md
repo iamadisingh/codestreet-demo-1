@@ -32,3 +32,9 @@ There would be an option for individuals to make their own mini-library platform
 
 ![alt text](screenshots/readme_pic1.png "Welcome Screens")
 ![alt text](screenshots/readme_pic2.png "Book Options Screens")
+
+# Flutter packages used
+
+1. [FontAwesome Flutter](https://pub.dev/packages/font_awesome_flutter) for icons.
+2. [Location package](https://pub.dev/packages/location) to get user's location.
+3. [Here maps](https://pub.dev/packages/here_maps_webservice) for maps.

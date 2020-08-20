@@ -2,7 +2,7 @@
 
 CodeStreet'20.
 
-Team name - Hack- eye (Smart City)
+Team name - [Hack- eye](https://codestreet-2020.hackerearth.com/challenges/hackathon/american-express-codestreet20/dashboard/bf28059/team/) (Smart City)
 
 ## Tools Used
 

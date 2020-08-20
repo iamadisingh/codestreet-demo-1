@@ -10,6 +10,8 @@ This project is built using [Flutter](https://flutter.dev/docs) an open source s
 
 We tried to make this app as simple and direct as possible, hence we avoided using heavy graphical UI and used less animation to keep the app size down and keep performance of our app on top.
 
+It uses [Dart](https://dart.dev/) as it's programming language.
+
 ## Problem Statement
 
 Today there is a trend of BOOK EXCHANGE  in India, the scale of which has never been seen before.The whole process, while novel, is Disoriented and Uncentralized with no way to keep track of things .

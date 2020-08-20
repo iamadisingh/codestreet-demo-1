@@ -28,7 +28,7 @@ Users would be able to issue a book online. The Librarian will get the request a
 
 There would be an option for individuals to make their own mini-library platform to exchange and lend the books with almost the same rules as applied for Public/Private libraries.
 
-## Screenshots
+## Screenshots of Demo App 
 
 ![alt text](screenshots/readme_pic1.png "Welcome Screens")
 ![alt text](screenshots/readme_pic2.png "Book Options Screens")

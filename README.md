@@ -6,7 +6,7 @@ Team name - Hack- eye (Smart City)
 
 ## Tools Used
 
-This project is built using Flutter an open source solution by Google for building AnDroid, iOS and Web app from a single codebase.
+This project is built using [Flutter](https://flutter.dev/docs) an open source solution by Google for building AnDroid, iOS and Web app from a single codebase.
 
 We tried to make this app as simple and direct as possible, hence we avoided using heavy graphical UI and used less animation to keep the app size down and keep performance of our app on top.
 
